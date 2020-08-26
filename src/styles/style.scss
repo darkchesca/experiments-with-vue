@@ -1,0 +1,91 @@
+@import "variables";
+@import "mixins";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+* {
+  box-sizing: border-box; //il valore di width fa riferimento al box nella sua interezza, comprendendo anche il padding e il bordo
+  margin: 0;
+  padding: 0;
+  //background-color: map_get($blue-colors, teal-blue);
+}
+
+li, a, button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: map_get($blue-colors, non-photo-blue);
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 5%;
+  background-color: map_get($blue-colors, teal-blue);
+  opacity: 0.8;
+
+  .logo {
+    cursor: pointer;
+    margin-right: auto;
+    height: 30px;
+    width: 30px;
+  }
+
+  .nav_links {
+    list-style: none;
+
+    li {
+      display: inline-block;
+      padding: 0px 20px;
+    }
+
+    a {
+      transition: all 0.3s ease 0s;
+
+      &:hover {
+        color: map_get($blue-colors, blue-sapphire);
+      }
+    }
+  }
+
+  button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      color: map_get($blue-colors, blue-sapphire);
+    }
+  }
+}
+
+
+.first-section {
+  @include img-container();
+  //background-image: url("../imgs/country-wallpapers-3.jpg");
+}
+
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+  background-color: map_get($blue-colors, teal-blue);
+  opacity: 0.8;
+
+  .copyright {
+    color: map_get($blue-colors, non-photo-blue);
+  }
+
+  .logo {
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+  }
+}

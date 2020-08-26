@@ -1,0 +1,13 @@
+@mixin img-container() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 576px;
+  position: relative;
+  opacity: 0.70;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
