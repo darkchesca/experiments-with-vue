@@ -7,8 +7,30 @@
         <b-modal
                 id="add-book-modal"
         >
-            <div>
-                Modal content
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <h3 class="text-center">Add Book</h3>
+                    <form @submit.prevent="handleSubmitForm">
+                        <div class="form-group">
+                            <label>Title</label>
+                            <input class="form-control" required type="text" v-model="book['title']">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Author</label>
+                            <input class="form-control" required type="email" v-model="book['author']">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Notes</label>
+                            <input class="form-control" type="text" v-model="book['notes']">
+                        </div>
+
+                        <div class="form-group">
+                            <button class="btn btn-danger btn-block">Add</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </b-modal>
 
