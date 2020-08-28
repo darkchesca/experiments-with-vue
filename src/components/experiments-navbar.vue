@@ -8,14 +8,13 @@
                         <router-link to="/">Home</router-link>
                     </li>
                     <li>
-                        <router-link to="/about">About</router-link>
+                        <router-link to="/books">Books</router-link>
                     </li>
-                    <li><a href="#">Three</a></li>
                 </ul>
             </nav>
-            <a class="cta" href="#">
+            <!--<a class="cta" href="#">
                 <button>Button</button>
-            </a>
+            </a>-->
         </header>
 
     </div>
