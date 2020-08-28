@@ -1,8 +1,7 @@
 <template>
     <div class="row justify-content-center">
         <div class="col-md-6">
-            <!-- Content goes here -->
-            content
+            <b-table :fields="fields" :items="items"/>
         </div>
     </div>
 
@@ -12,7 +11,20 @@
     export default {
         name: "experiments-table-view-elements",
         data() {
-            return {}
+            return {
+                items: [
+                    {
+                        'title': 'titolo',
+                        'author': 'autore',
+                        'notes': 'autore'
+                    }, {
+                        'title': 'titolo',
+                        'author': 'autore',
+                        'notes': 'autore'
+                    }
+                ],
+                fields: ['title', 'author', 'notes']
+            }
         }
     }
 </script>
